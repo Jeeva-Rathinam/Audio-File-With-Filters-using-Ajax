@@ -96,7 +96,8 @@ if(isset($_POST["action"]))
 					Languages		  : '. $row['voice_languages'].' <br />
 					Jingle Moods	  : '. $row['voice_jingle_moods'].' <br />
 					Ivr 			  : '. $row['voice_ivr'].' <br /> </p>
-				</div>
+					<button class="btn btn-primary" type="submit" style="padding: 5px 83px 5px 83px;"> Add to PlayList </button>
+				</div>  
 
 			</div>
 			';
@@ -109,3 +110,39 @@ if(isset($_POST["action"]))
 	echo $output;
 }
 ?>
+
+<script>
+	$(".button").click(function(e){
+
+	// var form_data = $(this).serialize();
+
+	var voice_name = $("#voice_name").val();
+	var voice_gender = $("#voice_gender").val();
+	var voice_genres = $("#voice_genres").val();
+	var voice_voice_modulation = $("#voice_voice_modulation").val();
+	var voice_languages = $("#voice_languages").val();
+	var voice_jingle_moods = $("#voice_jingle_moods").val();
+	var voice_ivr = $("#voice_ivr").val();
+	
+	var button_content = $(this).find('button[type=submit]');
+	button_content.html('Adding...');
+	$.ajax({
+	url: "manage_cart.php",
+	type: "POST",
+	dataType:"text",
+	data: { 
+		voice_name 			   : voice_name, 
+		voice_gender 		   : voice_gender,
+		voice_genres 		   : voice_genres,
+		voice_voice_modulation : voice_voice_modulation,
+		voice_languages		   : voice_languages,
+		voice_jingle_moods     : voice_jingle_moods,
+		voice_ivr    		   : voice_ivr
+	}
+	}).done(function(data){
+	$("#cart-container").html(data.products);
+	button_content.html('Add to Cart');
+	})
+	e.preventDefault();
+	});
+</script>

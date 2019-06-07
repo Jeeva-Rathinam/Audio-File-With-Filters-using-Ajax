@@ -33,7 +33,7 @@ include('database_connection.php');
     <div class="container">
         <div class="row">
         	<br />
-        	<h2 align="center">All Languages Voice Repository</h2>
+        	<h2 align="center">Voice Repository Bank</h2>
         	<br />
             <div class="col-md-3">
 
@@ -109,12 +109,9 @@ include('database_connection.php');
                     <?php
                     }
                     ?>	
-                </div>
-
-
-
-                
+                </div> 
                 <!-- Gender  -->
+
                 <div class="list-group">
 					<h3>Gender</h3>
                     <div style="height: 180px; overflow-y: auto; overflow-x: hidden;">
@@ -136,7 +133,6 @@ include('database_connection.php');
                     ?>
                     </div>
                 </div>
-
 
                 <!-- Jingle Moods -->
                 <div class="list-group">
@@ -182,13 +178,21 @@ include('database_connection.php');
             </div>
 
             <div class="col-md-9">
-            	<br />
-                <div class="row filter_data">
+            	<!-- <br /> -->
+                <div class="text-center">	
+		            <div class="col-md-12 text-right header-box">
+		                <a href="view_cart.php" class="cart-counter" id="cart-info" title="View Cart">            
+			                <span class="cart-item" id="cart-container">0</span>
+		                </a>
+		            </div>
+		            <div class="col-md-12 text-center">	
+						<div class="row filter_data">
 
-                </div>
-            </div>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
-
     </div>
 <style>
 #loading
