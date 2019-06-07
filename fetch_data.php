@@ -97,13 +97,6 @@ if(isset($_POST["action"]))
 					Jingle Moods	  : '. $row['voice_jingle_moods'].' <br />
 					Ivr 			  : '. $row['voice_ivr'].' <br /> </p>
 					<button class="btn btn-primary" type="submit" style="padding: 5px 83px 5px 83px;"> Add to PlayList </button>
-<<<<<<< HEAD
-				</div>
-				
-=======
-				</div>  
-
->>>>>>> 26d05f0e845405560b14fe0b013efe51bec786fc
 			</div>
 			';
 		} 
