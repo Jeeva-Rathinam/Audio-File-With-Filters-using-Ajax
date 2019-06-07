@@ -96,8 +96,9 @@ if(isset($_POST["action"]))
 					Languages		  : '. $row['voice_languages'].' <br />
 					Jingle Moods	  : '. $row['voice_jingle_moods'].' <br />
 					Ivr 			  : '. $row['voice_ivr'].' <br /> </p>
+					<button class="btn btn-primary" type="submit" style="padding: 5px 83px 5px 83px;"> Add to PlayList </button>
 				</div>
-
+				
 			</div>
 			';
 		} 

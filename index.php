@@ -33,7 +33,7 @@ include('database_connection.php');
     <div class="container">
         <div class="row">
         	<br />
-        	<h2 align="center">All Languages Voice Repository</h2>
+        	<h2 align="center">Voice Repository Bank</h2>
         	<br />
             <div class="col-md-3">
 
