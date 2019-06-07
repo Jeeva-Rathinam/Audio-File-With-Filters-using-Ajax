@@ -179,16 +179,10 @@ include('database_connection.php');
 
             <div class="col-md-9">
             	<!-- <br /> -->
-                <div class="text-center">	
-		            <div class="col-md-12 text-right header-box">
-		                <a href="view_cart.php" class="cart-counter" id="cart-info" title="View Cart">            
-			                <span class="cart-item" id="cart-container">0</span>
-		                </a>
-		            </div>
-		            <div class="col-md-12 text-center">	
-						<div class="row filter_data">
+        
+		        <div class="col-md-12 text-center">	
+					<div class="row filter_data">
 
-						</div>
 					</div>
 				</div>
 			</div>
